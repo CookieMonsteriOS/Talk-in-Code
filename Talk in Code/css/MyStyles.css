@@ -1,0 +1,151 @@
+/*-----BASE STYLES-------- */
+
+@font-face {
+
+font-family: 'BebasNeue';
+	src: url('css/fonts/bebasneue-webfont.eot'); 
+	src: url('css/fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'), 
+	     url('fonts/bebasneue-webfont.woff') format('woff'), 
+	     url('bebasneue-webfont.ttf')  format('truetype'), 
+	     url('css/fonts/bebasneue-webfont.svg#svgFontName') format('svg');    	
+
+}
+
+body {
+
+  background: url('../img/backgroundImage.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;; 
+
+
+}
+
+img {
+
+  display: block;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;		
+  border: 8px solid;
+  border-color: #E5D7BE;
+
+}
+
+.title h2 {
+
+background-color: #E5D7BE;
+border: solid 2px;
+border-color:#BD291D;
+text-align: center;
+
+}
+
+h2 {
+
+font-family: BebasNeue,arial, Sans-serif; 
+font-size: 1.5em;
+font-weight: bold;
+color: #85A6A5;	
+padding: 15px 20px;
+margin: 20px 0px;
+
+}
+
+#userTextPanel {
+
+  margin-right: auto;
+  margin-left: auto;    
+  border: 5px solid;
+  border-color: #7C709A;
+
+}
+
+#userTextPanelTitle{
+
+font-family: Arial, Sans-serif; 
+font-size: 1.2em;
+font-weight: bold;
+color: #7C709A; 
+
+}
+
+#morseTextPanel{
+
+  margin-right: auto;
+  margin-left: auto;    
+  border: 5px solid;
+  border-color:#E88FA5;
+
+
+}
+
+#morseTitleTextPanel {
+
+font-family: Arial, Sans-serif; 
+font-size: 1.2em;
+font-weight: bold;
+color: #E88FA5; 
+
+}
+
+
+.socialLinks a img {
+
+display: inline;
+margin-top: 5px;
+background-color: #E5D7BE;
+border: solid 2px;
+border-color: #BD291D;
+text-align: center;
+
+}
+
+/*------- Iphone 4 and 5 (Chrome emulator)----- */
+
+@media only screen and  (min-width:  320px){
+
+  .socialLinks a  {
+
+    padding-left: 20px;
+
+  }
+
+  .title h2 {
+
+    font-size: 1.4em;
+    font-weight: bold;
+
+  }
+
+}
+
+/*-------Samsung Galaxy (Chrome emulator) ----- */
+
+@media only screen and  (min-width:  375px) and (max-width: 414px){
+
+  .socialLinks a  {
+
+    margin-left: 18px;
+
+  }
+
+  .title h2 {
+
+    font-size: 1.8em;
+    font-weight: bold;
+
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
