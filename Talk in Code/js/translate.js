@@ -29,32 +29,19 @@ $('#Twitter').click(function(){
 
 	var morseCodeText = $('#morseCode').val();
      
-	if(morseCodeText.length > 140) {
+		//Additonal messages 
+	var message = "  Translated at www.talkincode.com  ";
 
-		alert(" Tweet needs to be less than 140 characters");
+	//Build string url 
+	var twtURL = 'http://twitter.com/home?status=' +encodeURIComponent( morseCodeText + message);
 
-	} else {
+	window.open(twtURL,'_blank');
 
-		postMorseCodeToTwitter(morseCodeText);
-
-	}
 
  });
 
 }
 
-function postMorseCodeToTwitter(morseCodeText) {
-
-//Additonal messages 
-var message = "  Translated at www.talkincode.com  ";
-
-//Build string url 
-var twtURL = 'http://twitter.com/home?status=' +encodeURIComponent( morseCodeText + message);
-
-window.open(twtURL,'_blank');
-
-
-}
 
 
 
